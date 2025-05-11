@@ -8,18 +8,23 @@ from vaciar_lista import vaciar_lista
 
 lista_prueba = [0, 1, 9, 2, 3, 4, 9, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
-# insertar(lista_prueba, "hola",4)
+insertar(lista_prueba, 16, 1)
+print(lista_prueba)
 
-# print(agregar(lista_prueba, 8))
+obtener_indice(lista_prueba, 6)
+print(lista_prueba)
 
-# print(insertar(lista_prueba, 99, 6))
+eliminar(lista_prueba)
+print(lista_prueba)
 
-# print(obtener_indice(lista_prueba, 910))
+eliminar_primer_instancia(lista_prueba, 16)
+print(lista_prueba)
 
-# print(eliminar(lista_prueba))
+eliminar_todos(lista_prueba, 16)
+print(lista_prueba)
 
-# print(eliminar_primer_instancia(lista_prueba, 9))
+vaciar_lista(lista_prueba)
+print(lista_prueba)
 
-# print(eliminar_todos(lista_prueba, 9))
-
-# vaciar_lista(lista_prueba)
+agregar(lista_prueba, 16)
+print(lista_prueba)

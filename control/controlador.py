@@ -6,7 +6,7 @@ def controlador_de_lista (lista):
         return False
     
 def controlador_de_elemento (elemento):
-    if type(elemento) == int or type(elemento) == float:
+    if type(elemento) == int:
         return True
     else:
         return False
