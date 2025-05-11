@@ -1,0 +1,94 @@
+Dominando la Manipulación de Listas: 
+Funciones Esenciales para un Manejo Eficiente de Datos
+
+Como ya sabemos las listas son una estructura de datos fundamental 
+en programación, permitiendo almacenar y organizar información de 
+manera dinámica. Sin embargo, su verdadero potencial se despliega al 
+dominar operaciones clave que facilitan la modificación, búsqueda y 
+gestión de sus elementos.
+
+Desarrollar las siguientes funcionalidades que utilizaremos para el manejo de listas:
+
+Agregar
+- Nombre de la función:
+        agregar(lista, elemento)
+-Objetivo:
+        Agregar un elemento al final de la lista.
+- Tarea:
+        Modificar la lista original, añadiendo elemento como su último elemento.
+        No es necesario retornar un valor (solo modificar la lista).
+
+Insertar
+- Nombre de la función:
+        insertar(lista, elemento, indice)
+- Objetivo:
+        Insertar un elemento en una posición específica de la lista.
+- Tarea:
+        Modificar la lista original, colocando elemento en la posición indicada por indice.
+        Si el índice es mayor al tamaño de la lista, el elemento se agrega al final.
+            Ejemplo: Si la lista es [10, 20, 30] y se inserta 5 en el índice 1, 
+            la lista resultante será [10, 5, 20, 30].
+
+Obtener indice
+- Nombre de la función:
+        obtener_indice(lista, elemento)
+- Objetivo:
+        Encontrar el índice de la primera ocurrencia de un elemento en la lista.
+- Tarea:
+        Buscar en la lista el elemento recibido y retornar su posición (índice).
+        Si el elemento no existe en la lista, retornar -1.
+
+Eliminar el último elemento
+- Nombre de la función:
+        eliminar(lista)
+- Objetivo:
+        Eliminar el último elemento de la lista y retornarlo.
+- Tarea:
+        Modificar la lista original, removiendo su último elemento.
+        Retornar el elemento eliminado.
+            Ejemplo: Si la lista es ["a", "b", "c"], al llamar a 
+            eliminar(), se retorna "c" y la lista queda ["a", "b"].
+
+Eliminar primera instancia
+- Nombre de la función:
+        eliminar_primer_instancia(lista, elemento)
+- Objetivo:
+        Eliminar la primera ocurrencia de un elemento en la lista y retornarlo.
+- Tarea:
+        Buscar la primera aparición de elemento en la lista, eliminarla 
+        y retornar el elemento eliminado.
+        Si el elemento no existe, retornar None y dejar la lista sin cambios.
+            Ejemplo: Si la lista es [5, 3, 5, 7] y se elimina 5, 
+            la lista queda [3, 5, 7] y se retorna 5.
+
+Eliminar todas las instancias
+- Nombre de la función:
+        eliminar_todos(lista, elemento)
+- Objetivo:
+        Eliminar todas las ocurrencias de un elemento en la lista.
+- Tarea:
+        Modificar la lista original, removiendo todos los elementos 
+        iguales al valor recibido.
+        No es necesario retornar un valor (solo modificar la lista).
+            Ejemplo: Si la lista es [4, 8, 4, 4, 10] y se eliminan 
+            todas las instancias de 4, la lista resultante será [8, 10].
+
+Vaciar Lista
+- Nombre de la función:
+        vaciar_lista(lista)
+- Objetivo:
+        Eliminar todos los elementos de la lista, dejándola vacía.
+- Tarea:
+        Modificar la lista original, removiendo todos sus elementos.
+        No es necesario retornar un valor (solo modificar la lista).
+            Ejemplo: Si la lista es [1, 2, 3], al llamar a 
+            vaciar_lista(), la lista quedará [].
+
+
+Notas importantes:
+    - Las funciones deben modificar la lista original 
+        (no crear una nueva lista).
+    - Considerar casos extremos, como listas vacías 
+        o elementos inexistentes.
+    - NO UTILIZAR métodos nativos de Python que hagan el 
+        trabajo directamente (como lista.pop() o lista.index()).
